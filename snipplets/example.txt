@@ -1,0 +1,41 @@
+alias leftof
+  return [left $1 [dec [instr $1 $2]]]
+end alias
+
+alias rightof
+  return [mid $1 [inc [instr $1 $2]]]
+end alias
+
+alias main
+  # This is a
+    multi-lined comment
+  #
+  ; This is a single line comment
+  msg "This is a basic msgbox"
+  msg "This has a caption" "Caption"
+  msg "This has a caption and a type" "Caption" 64 # 64 = info #
+
+  ; set command
+  set variablename "Hello World"
+  msg "$variablename!" "First SEX Script"
+
+  set fullname [input "What is your full name?" "Full name?"]
+  if [instr $fullname Gates]
+    msg "Are you related to Bill Gates by any change? "Related?" 36
+  else
+    msg "Nice to meet you, $fullname!"
+  end if
+
+  loop x 3
+    loop y 3
+      msg "coords: $x,$y" "coordinates" 64
+    end loop
+  end loop
+
+  set firstlastname [input "Now please enter your first and last name" "Name?"]
+  set firstname [leftof $firstlastname " "]
+  set lastname [rightof $firstlastname " "]
+
+  msg "Your first name is: $firstname\nYour last name is: $lastname\n"
+end alias
+   

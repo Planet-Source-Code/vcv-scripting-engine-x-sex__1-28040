@@ -1,0 +1,8 @@
+alias main
+  set name [input "What's your name?" Name]
+  if [instr $name vcv]
+    msg "You are not vcv!"
+  else
+    msg "Hey $name"
+  end if
+end alias

@@ -1,0 +1,11 @@
+alias main
+  set fullname [input "Enter your full name" Input]
+  set fname $fullname
+  set firstname [mid $fullname 1 [instr $fullname " "]]
+  set fullname [mid $fullname [inc [instr $fullname " "]]]
+  set middlename [mid $fullname 1 [instr $fullname " "]]
+  set fullname [mid $fullname [inc [instr $fullname " "]]]
+  set lastname [mid $fullname 1 [instr $fullname " "]]
+  msg "Your full name is: $fname\nYour first name is: $firstname\nYour middle name is: $middlename\nYour Last name is: $fullname\n"
+end alias
+  

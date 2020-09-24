@@ -1,0 +1,11 @@
+alias main
+  if -1
+   msg -1
+  elseif -2
+   msg -2
+  elseif -3
+   msg -3
+  else
+   msg else
+  end if
+end alias
