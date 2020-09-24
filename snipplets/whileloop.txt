@@ -1,0 +1,13 @@
+alias main
+  set x 0
+  set y 0
+  while $x < 30
+    set x [calc $x + 1]
+    set y 0
+    while $y < 300
+      set y [calc $y + 1]
+    end while
+  end while
+end alias
+
+# 8.702 seconds #

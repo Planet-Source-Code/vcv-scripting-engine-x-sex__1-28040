@@ -1,0 +1,5 @@
+alias main
+  loop x 10000
+    ;do someting
+  end loop
+end alias

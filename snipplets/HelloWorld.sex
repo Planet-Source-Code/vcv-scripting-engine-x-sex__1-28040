@@ -1,0 +1,4 @@
+alias main
+   ; main body code goes here
+   msg "Hello World"
+end alias

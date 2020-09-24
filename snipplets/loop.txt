@@ -1,0 +1,8 @@
+alias main
+  loop x 4
+    loop y 4
+      ;nothing
+    end loop
+    doevents
+  end loop
+end alias

@@ -1,0 +1,8 @@
+alias fuck
+ msg $1
+ fuck [dec $1]
+end alias
+
+alias main
+ fuck 4
+end alias
